@@ -1,0 +1,6 @@
+@Alym.Server_HostAddress = http://localhost:5227
+
+GET {{Alym.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "M4Rh8U0goz4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Server\\Alym.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
