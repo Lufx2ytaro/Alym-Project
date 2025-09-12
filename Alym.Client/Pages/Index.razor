@@ -1,0 +1,54 @@
+@page "/index"
+
+<PageTitle>Главная - Alym</PageTitle>
+
+<div class="container mt-4">
+    <h1 class="text-center">Добро пожаловать в <b>Alym</b>!</h1>
+    <p class="text-center text-muted">
+        Удобный инструмент для бухгалтеров и экономистов: расчёты зарплаты, налогов, ЖКХ и анализ выгодности производства.
+    </p>
+
+    <hr />
+
+    <div class="row mt-4">
+        <!-- Calculator -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h2>⚡</h2>
+                    <h5 class="card-title">Калькулятор</h5>
+                    <p class="card-text">Автоматизированные расчёты зарплаты, налогов и ЖКХ.</p>
+                    <NavLink class="btn btn-primary" href="calculator">Перейти</NavLink>
+                </div>
+            </div>
+        </div>
+
+        <!-- Regions -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h2>🌍</h2>
+                    <h5 class="card-title">Регионы</h5>
+                    <p class="card-text">Тарифы и коэффициенты для расчётов по регионам России.</p>
+                    <NavLink class="btn btn-primary" href="regions">Перейти</NavLink>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reports -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h2>📊</h2>
+                    <h5 class="card-title">Отчёты</h5>
+                    <p class="card-text">Сравнение выгодности и анализ результатов расчётов.</p>
+                    <NavLink class="btn btn-primary" href="reports">Перейти</NavLink>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4 text-muted">
+        © 2025 Alym — создано Фирузом Алимовым
+    </footer>
+</div>
