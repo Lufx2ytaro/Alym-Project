@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Alym.Client",
   "resources": {
-    "hash": "sha256-uiJXEpL51QRCLOQvTsm0RqGb/7hFdmM7QoBtkCDIzqg=",
+    "hash": "sha256-sycrz1Vmt3MO2/JkTPdLbcHxWEaM3IgOGFL2QoQCGzw=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.tnyc7xpluy.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.t32damlu4o.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,10 +201,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "Alym.Shared.9y4fijzzd6.wasm": "Alym.Shared.wasm",
-      "Alym.Shared.1tdi4or3ht.pdb": "Alym.Shared.pdb",
-      "Alym.Client.kc4hfocxp0.wasm": "Alym.Client.wasm",
-      "Alym.Client.o0sla1twni.pdb": "Alym.Client.pdb"
+      "Alym.Shared.6efciilub1.wasm": "Alym.Shared.wasm",
+      "Alym.Shared.bksr5m2t98.pdb": "Alym.Shared.pdb",
+      "Alym.Client.fw78r60pq2.wasm": "Alym.Client.wasm",
+      "Alym.Client.lwnyu181np.pdb": "Alym.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.9ih887ebfz.js": "sha256-oS7IRiQoVt9ThQ7Y2UM3XoeY0JqPD02cg9IvRdufn2w="
@@ -414,12 +414,12 @@
       "WindowsBase.361km0836k.wasm": "sha256-FacUCEIJYTnbOWgX/R9QP2QnurqRZwRIkDAH0N9z69s=",
       "mscorlib.qiu3j3msqk.wasm": "sha256-QvztpxTOEw4aMIl7zP3QtsPLNv/IWaK5wq22J4ReGrA=",
       "netstandard.lp03u0xxi4.wasm": "sha256-WVQsxULiAiEbyXLKolS7txnWVT82SsvsuMe4jJ+SqqI=",
-      "Alym.Shared.9y4fijzzd6.wasm": "sha256-0TR5ajy5HHhAPwO/vWq5iVPydwRLwa6/zz9820fhX00=",
-      "Alym.Client.kc4hfocxp0.wasm": "sha256-vADQNbxLEijDVMsy1Gc50llji8ao44N2URQcYjiMJ8c="
+      "Alym.Shared.6efciilub1.wasm": "sha256-7oL8tiA76zBpLf6RqyCYPwyXVvambHlp0dyvvas1dsY=",
+      "Alym.Client.fw78r60pq2.wasm": "sha256-ARMAKnZaXh270ZC+LgVtv1pMHvskimWMwXuvLzf+MJ4="
     },
     "pdb": {
-      "Alym.Shared.1tdi4or3ht.pdb": "sha256-ZWrJOwp+N1dXOJRBeG3zTlYJDpuxnuLue8Vi7FQWCVU=",
-      "Alym.Client.o0sla1twni.pdb": "sha256-6MBJx5cQOlT3cArAmoZYo3A07z+jn3AGSAWEbxvnn4M="
+      "Alym.Shared.bksr5m2t98.pdb": "sha256-pZm9aQ530lvkH7hiAljl186l2dy7zhhvHihCLNEAvOc=",
+      "Alym.Client.lwnyu181np.pdb": "sha256-exD6/SkpCEON5oKX67d4mBbb32nkFQkyctd+aHkwDgo="
     }
   },
   "cacheBootResources": true,

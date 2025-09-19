@@ -1,54 +1,25 @@
-@page "/index"
+@page "/"
 
-<PageTitle>Главная - Alym</PageTitle>
+<PageTitle>Главная</PageTitle>
 
-<div class="container mt-4">
-    <h1 class="text-center">Добро пожаловать в <b>Alym</b>!</h1>
-    <p class="text-center text-muted">
-        Удобный инструмент для бухгалтеров и экономистов: расчёты зарплаты, налогов, ЖКХ и анализ выгодности производства.
-    </p>
+<div class="text-center my-5">
+    <h1 class="display-4 fw-bold text-primary">Alym - твой верный помощник</h1>
+    <p class="lead">Узнай, как открыть свой первый бизнес</p>
+</div>
 
-    <hr />
-
-    <div class="row mt-4">
-        <!-- Calculator -->
-        <div class="col-md-4 mb-3">
-            <div class="card shadow-sm h-100">
-                <div class="card-body text-center">
-                    <h2>⚡</h2>
-                    <h5 class="card-title">Калькулятор</h5>
-                    <p class="card-text">Автоматизированные расчёты зарплаты, налогов и ЖКХ.</p>
-                    <NavLink class="btn btn-primary" href="calculator">Перейти</NavLink>
-                </div>
-            </div>
-        </div>
-
-        <!-- Regions -->
-        <div class="col-md-4 mb-3">
-            <div class="card shadow-sm h-100">
-                <div class="card-body text-center">
-                    <h2>🌍</h2>
-                    <h5 class="card-title">Регионы</h5>
-                    <p class="card-text">Тарифы и коэффициенты для расчётов по регионам России.</p>
-                    <NavLink class="btn btn-primary" href="regions">Перейти</NavLink>
-                </div>
-            </div>
-        </div>
-
-        <!-- Reports -->
-        <div class="col-md-4 mb-3">
-            <div class="card shadow-sm h-100">
-                <div class="card-body text-center">
-                    <h2>📊</h2>
-                    <h5 class="card-title">Отчёты</h5>
-                    <p class="card-text">Сравнение выгодности и анализ результатов расчётов.</p>
-                    <NavLink class="btn btn-primary" href="reports">Перейти</NavLink>
-                </div>
-            </div>
+<div class="d-flex justify-content-center">
+    <div class="card shadow p-4" style="max-width: 500px;">
+        <div class="card-body text-center">
+            <h3 class="card-title mb-3">Добро пожаловать!</h3>
+            <p class="card-text mb-4">
+                Этот проект помогает быстро рассчитать все необходимые вычисления для вашего бизнеса. 
+                Просто нажмите кнопку ниже, чтобы начать расчёт.
+            </p>
+            <NavLink class="btn btn-primary btn-lg" href="/calc">Начать расчёт</NavLink>
         </div>
     </div>
-
-    <footer class="text-center mt-4 text-muted">
-        © 2025 Alym — создано Фирузом Алимовым
-    </footer>
 </div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <small>&copy; Made in TJK</small>
+</footer>
