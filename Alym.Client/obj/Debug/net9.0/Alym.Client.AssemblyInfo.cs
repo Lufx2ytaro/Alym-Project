@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alym.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+899bfcc2407ffce902409640684498a3803c242c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98eea0b8b1e0591fea3aba23630bf3ea2c98fc8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alym.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alym.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

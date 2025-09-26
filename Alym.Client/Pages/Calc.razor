@@ -109,6 +109,16 @@
                     new Question { Text = "Средний чек (руб)?" },
                     new Question { Text = "Расходы на материалы в месяц (руб)?" }
                 }
+            },
+            new BusinessPreset
+            {
+              Name = "Общественный туалет",
+              Questions = new List<Question>
+              {
+                new Question {Text = "Сколько стоит вход"},
+                new Question {Text = "Среднее кол-во клиентов в день"},
+                new Question {Text = "Расходы"},
+              }
             }
         };
     }
@@ -177,6 +187,16 @@
 
             resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
             resultLines.Add($"Материальные расходы в месяц: {materials:0.00} руб.");
+        }
+        else if(selected.Name == "Общественный туалет")
+        {
+          var price = selected.Questions[index:0].Value;
+          var cl = selected.Questions[index:1].Value;
+          var rashod = selected.Questions[index:2].Value;
+
+          var den = price * cl - rashod;
+
+          resultLines.Add(item: $"дневная выручка:{den:0.00} руб.");
         }
 
         step = 3;
