@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TpenDiGA8/6zsV+XiA7nBQ+uXj+0rGcjgM1E+OJ4B2Y=",
+  "Hash": "YNFxdRjgj1q4AHMR0jh+jrAsAoc0WN4ZZW57ovtYQxg=",
   "Source": "Alym.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "m9klzalyd0",
-      "Integrity": "2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA=",
+      "Fingerprint": "d27xj0y6nd",
+      "Integrity": "+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\Alym.Client.pdb"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "2sfqn0xi2o",
-      "Integrity": "niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc=",
+      "Fingerprint": "poxe4o1axi",
+      "Integrity": "CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\webcil\\Alym.Client.wasm"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "lucf7pbzyq",
-      "Integrity": "zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4=",
+      "Fingerprint": "0zcvg7fx7b",
+      "Integrity": "lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Shared\\bin\\Debug\\net9.0\\Alym.Shared.pdb"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "6zktiesapu",
-      "Integrity": "cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU=",
+      "Fingerprint": "ln3j0u0gkz",
+      "Integrity": "vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\webcil\\Alym.Shared.wasm"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "5rgwrk8b33",
-      "Integrity": "0Sd0f4cfCI9nDNlHcQ9R4bwsCzPODvqLibVMdoKwUVI=",
+      "Fingerprint": "63oa1cmfit",
+      "Integrity": "jvanM9RR+IWwK/0reOR5HnxJRGrh0mqJQwAMWKeyhoE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -7493,12 +7493,12 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-lucf7pbzyq.gz",
+      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-0zcvg7fx7b.gz",
       "SourceId": "Alym.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Alym.Shared#[.{fingerprint=lucf7pbzyq}]!.pdb.gz",
+      "RelativePath": "_framework/Alym.Shared#[.{fingerprint=0zcvg7fx7b}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7507,8 +7507,8 @@
       "RelatedAsset": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "7aj6x0yem5",
-      "Integrity": "HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI=",
+      "Fingerprint": "lw5f8vuudm",
+      "Integrity": "pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.pdb"
@@ -7535,12 +7535,12 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Text.Encoding.wasm"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-6zktiesapu.gz",
+      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-ln3j0u0gkz.gz",
       "SourceId": "Alym.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Alym.Shared#[.{fingerprint=6zktiesapu}]!.wasm.gz",
+      "RelativePath": "_framework/Alym.Shared#[.{fingerprint=ln3j0u0gkz}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7549,8 +7549,8 @@
       "RelatedAsset": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "v64ifdqnbi",
-      "Integrity": "SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE=",
+      "Fingerprint": "z4wzc6ftwx",
+      "Integrity": "cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.wasm"
@@ -8459,12 +8459,12 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-2sfqn0xi2o.gz",
+      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-poxe4o1axi.gz",
       "SourceId": "Alym.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Alym.Client#[.{fingerprint=2sfqn0xi2o}]!.wasm.gz",
+      "RelativePath": "_framework/Alym.Client#[.{fingerprint=poxe4o1axi}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8473,8 +8473,8 @@
       "RelatedAsset": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "nkx4lydyi6",
-      "Integrity": "9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE=",
+      "Fingerprint": "6qgviai2ce",
+      "Integrity": "bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.wasm"
@@ -8522,7 +8522,7 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\rid3d4svih-5rgwrk8b33.gz",
+      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\rid3d4svih-63oa1cmfit.gz",
       "SourceId": "Alym.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -8536,8 +8536,8 @@
       "RelatedAsset": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rnjt5km76s",
-      "Integrity": "OeIwnjNi94LAU/alFZbNa4bvWJmZNwsKxDEHDOVTpDQ=",
+      "Fingerprint": "3pn3fvd6ti",
+      "Integrity": "ScpkV6FvT9fXlT0TFga2geLagysUiHltqXE+QUCQFFo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -9404,12 +9404,12 @@
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Numerics.wasm"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-m9klzalyd0.gz",
+      "Identity": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-d27xj0y6nd.gz",
       "SourceId": "Alym.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Alym.Client#[.{fingerprint=m9klzalyd0}]!.pdb.gz",
+      "RelativePath": "_framework/Alym.Client#[.{fingerprint=d27xj0y6nd}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -9418,8 +9418,8 @@
       "RelatedAsset": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "leyrddzybg",
-      "Integrity": "7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q=",
+      "Fingerprint": "v9j6bitjf7",
+      "Integrity": "E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.pdb"
@@ -10771,168 +10771,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "_framework/Alym.Client.2sfqn0xi2o.wasm",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25365"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2sfqn0xi2o"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Alym.Client.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Alym.Client.2sfqn0xi2o.wasm",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-2sfqn0xi2o.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000095102235"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10514"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2sfqn0xi2o"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Alym.Client.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Alym.Client.2sfqn0xi2o.wasm.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-2sfqn0xi2o.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10514"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2sfqn0xi2o"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Alym.Client.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Alym.Client.m9klzalyd0.pdb",
+      "Route": "_framework/Alym.Client.d27xj0y6nd.pdb",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -10942,7 +10781,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30964"
+          "Value": "31948"
         },
         {
           "Name": "Content-Type",
@@ -10950,11 +10789,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA=\""
+          "Value": "\"+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:20 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10964,7 +10803,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m9klzalyd0"
+          "Value": "d27xj0y6nd"
         },
         {
           "Name": "label",
@@ -10972,18 +10811,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA="
+          "Value": "sha256-+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ="
         }
       ]
     },
     {
-      "Route": "_framework/Alym.Client.m9klzalyd0.pdb",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-m9klzalyd0.gz",
+      "Route": "_framework/Alym.Client.d27xj0y6nd.pdb",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-d27xj0y6nd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000041969195"
+          "Quality": "0.000040746475"
         }
       ],
       "ResponseHeaders": [
@@ -10993,15 +10832,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23826"
+          "Value": "24541"
         },
         {
           "Name": "ETag",
-          "Value": "\"7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q=\""
+          "Value": "\"E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11021,13 +10860,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA=\""
+          "Value": "W/\"+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m9klzalyd0"
+          "Value": "d27xj0y6nd"
         },
         {
           "Name": "label",
@@ -11035,13 +10874,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA="
+          "Value": "sha256-+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ="
         }
       ]
     },
     {
-      "Route": "_framework/Alym.Client.m9klzalyd0.pdb.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-m9klzalyd0.gz",
+      "Route": "_framework/Alym.Client.d27xj0y6nd.pdb.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-d27xj0y6nd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11050,7 +10889,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23826"
+          "Value": "24541"
         },
         {
           "Name": "Content-Type",
@@ -11058,11 +10897,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q=\""
+          "Value": "\"E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11080,7 +10919,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m9klzalyd0"
+          "Value": "d27xj0y6nd"
         },
         {
           "Name": "label",
@@ -11088,7 +10927,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q="
+          "Value": "sha256-E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y="
         }
       ]
     },
@@ -11103,7 +10942,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "30964"
+          "Value": "31948"
         },
         {
           "Name": "Content-Type",
@@ -11111,11 +10950,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA=\""
+          "Value": "\"+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:20 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11125,18 +10964,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA="
+          "Value": "sha256-+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Client.pdb",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-m9klzalyd0.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-d27xj0y6nd.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000041969195"
+          "Quality": "0.000040746475"
         }
       ],
       "ResponseHeaders": [
@@ -11146,15 +10985,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23826"
+          "Value": "24541"
         },
         {
           "Name": "ETag",
-          "Value": "\"7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q=\""
+          "Value": "\"E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11174,19 +11013,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA=\""
+          "Value": "W/\"+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2pRIhUEa5oNt1PehGkDcf5eHxbxFTrdb+BhWBdt8MVA="
+          "Value": "sha256-+8rw1mz4M8mfFmdeDcMHu5oAUlkGo+KdvR1TB6P0vHQ="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-m9klzalyd0.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\y5qbrlv534-d27xj0y6nd.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11195,7 +11034,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23826"
+          "Value": "24541"
         },
         {
           "Name": "Content-Type",
@@ -11203,11 +11042,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q=\""
+          "Value": "\"E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11225,7 +11064,168 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7Rcq/GK6gIQSLqoy5VEAsk6HhPAhJUcccIfNArL642Q="
+          "Value": "sha256-E6qMPxa6OIU6d9hlNaKRsJV2Asqz5i+duZzAxX4dw4Y="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Alym.Client.poxe4o1axi.wasm",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Client.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27925"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Sep 2025 10:22:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "poxe4o1axi"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Alym.Client.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Alym.Client.poxe4o1axi.wasm",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-poxe4o1axi.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000083998320"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11904"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Sep 2025 10:22:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "poxe4o1axi"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Alym.Client.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Alym.Client.poxe4o1axi.wasm.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-poxe4o1axi.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11904"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 26 Sep 2025 10:22:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "poxe4o1axi"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Alym.Client.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY="
         }
       ]
     },
@@ -11240,7 +11240,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25365"
+          "Value": "27925"
         },
         {
           "Name": "Content-Type",
@@ -11248,11 +11248,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc=\""
+          "Value": "\"CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:20 GMT"
+          "Value": "Fri, 26 Sep 2025 10:22:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11262,18 +11262,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc="
+          "Value": "sha256-CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Client.wasm",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-2sfqn0xi2o.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-poxe4o1axi.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000095102235"
+          "Quality": "0.000083998320"
         }
       ],
       "ResponseHeaders": [
@@ -11283,15 +11283,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10514"
+          "Value": "11904"
         },
         {
           "Name": "ETag",
-          "Value": "\"9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE=\""
+          "Value": "\"bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Fri, 26 Sep 2025 10:22:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11311,19 +11311,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc=\""
+          "Value": "W/\"CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-niYcEB7TAtXaPO+fJU0dPypfF5HXrGcIDfqH4c3eHzc="
+          "Value": "sha256-CRaXVCATCRtrE2qPGSeKf1nQZQSKFgu3cFIKyUXlusc="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-2sfqn0xi2o.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\r56p4bw6oo-poxe4o1axi.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11332,7 +11332,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10514"
+          "Value": "11904"
         },
         {
           "Name": "Content-Type",
@@ -11340,11 +11340,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE=\""
+          "Value": "\"bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Fri, 26 Sep 2025 10:22:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11362,173 +11362,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9895eu7z/KFej4KJjLLn/mxEISLSmMrOTgZuQAYzBoE="
+          "Value": "sha256-bsCNXunXcVxJmsUndKcL9GAHqicA5sMDTfXfcJDLvXY="
         }
       ]
     },
     {
-      "Route": "_framework/Alym.Shared.6zktiesapu.wasm",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4885"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:22 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6zktiesapu"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Alym.Shared.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Alym.Shared.6zktiesapu.wasm",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-6zktiesapu.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000470145745"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2126"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6zktiesapu"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Alym.Shared.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Alym.Shared.6zktiesapu.wasm.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-6zktiesapu.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2126"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "6zktiesapu"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Alym.Shared.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Alym.Shared.lucf7pbzyq.pdb",
+      "Route": "_framework/Alym.Shared.0zcvg7fx7b.pdb",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11538,7 +11377,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11336"
+          "Value": "11584"
         },
         {
           "Name": "Content-Type",
@@ -11546,11 +11385,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4=\""
+          "Value": "\"lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:20 GMT"
+          "Value": "Mon, 06 Oct 2025 17:11:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11560,7 +11399,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lucf7pbzyq"
+          "Value": "0zcvg7fx7b"
         },
         {
           "Name": "label",
@@ -11568,18 +11407,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4="
+          "Value": "sha256-lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q="
         }
       ]
     },
     {
-      "Route": "_framework/Alym.Shared.lucf7pbzyq.pdb",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-lucf7pbzyq.gz",
+      "Route": "_framework/Alym.Shared.0zcvg7fx7b.pdb",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-0zcvg7fx7b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000150150150"
+          "Quality": "0.000147449130"
         }
       ],
       "ResponseHeaders": [
@@ -11589,15 +11428,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6659"
+          "Value": "6781"
         },
         {
           "Name": "ETag",
-          "Value": "\"HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI=\""
+          "Value": "\"pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11617,13 +11456,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4=\""
+          "Value": "W/\"lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lucf7pbzyq"
+          "Value": "0zcvg7fx7b"
         },
         {
           "Name": "label",
@@ -11631,13 +11470,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4="
+          "Value": "sha256-lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q="
         }
       ]
     },
     {
-      "Route": "_framework/Alym.Shared.lucf7pbzyq.pdb.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-lucf7pbzyq.gz",
+      "Route": "_framework/Alym.Shared.0zcvg7fx7b.pdb.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-0zcvg7fx7b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11646,7 +11485,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6659"
+          "Value": "6781"
         },
         {
           "Name": "Content-Type",
@@ -11654,11 +11493,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI=\""
+          "Value": "\"pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11676,7 +11515,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lucf7pbzyq"
+          "Value": "0zcvg7fx7b"
         },
         {
           "Name": "label",
@@ -11684,7 +11523,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI="
+          "Value": "sha256-pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Alym.Shared.ln3j0u0gkz.wasm",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Alym.Shared.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5397"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Oct 2025 17:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ln3j0u0gkz"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Alym.Shared.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Alym.Shared.ln3j0u0gkz.wasm",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-ln3j0u0gkz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000425713069"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2348"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ln3j0u0gkz"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Alym.Shared.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Alym.Shared.ln3j0u0gkz.wasm.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-ln3j0u0gkz.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2348"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ln3j0u0gkz"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Alym.Shared.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg="
         }
       ]
     },
@@ -11699,7 +11699,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11336"
+          "Value": "11584"
         },
         {
           "Name": "Content-Type",
@@ -11707,11 +11707,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4=\""
+          "Value": "\"lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:20 GMT"
+          "Value": "Mon, 06 Oct 2025 17:11:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11721,18 +11721,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4="
+          "Value": "sha256-lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Shared.pdb",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-lucf7pbzyq.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-0zcvg7fx7b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000150150150"
+          "Quality": "0.000147449130"
         }
       ],
       "ResponseHeaders": [
@@ -11742,15 +11742,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6659"
+          "Value": "6781"
         },
         {
           "Name": "ETag",
-          "Value": "\"HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI=\""
+          "Value": "\"pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11770,19 +11770,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4=\""
+          "Value": "W/\"lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zcma1WvHBnwqfqWhk3w1S9RpWV3TRqRe6n9hWV0aWi4="
+          "Value": "sha256-lPDpuSIVm0TJgURl/vHeE5SeHq7cVERWEjRaodK86+Q="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Shared.pdb.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-lucf7pbzyq.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\l1k10tpqwl-0zcvg7fx7b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11791,7 +11791,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6659"
+          "Value": "6781"
         },
         {
           "Name": "Content-Type",
@@ -11799,11 +11799,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI=\""
+          "Value": "\"pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11821,7 +11821,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HwhkV/I2rd9zlY3IH9NWD3r9S/WD6avUC2SsfOlAkCI="
+          "Value": "sha256-pQ+2RP1CGKJk6vlUf6gPL1BsOoHygmizjMYYIyoAxgI="
         }
       ]
     },
@@ -11836,7 +11836,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4885"
+          "Value": "5397"
         },
         {
           "Name": "Content-Type",
@@ -11844,11 +11844,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU=\""
+          "Value": "\"vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:22 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11858,18 +11858,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU="
+          "Value": "sha256-vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Shared.wasm",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-6zktiesapu.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-ln3j0u0gkz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000470145745"
+          "Quality": "0.000425713069"
         }
       ],
       "ResponseHeaders": [
@@ -11879,15 +11879,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2126"
+          "Value": "2348"
         },
         {
           "Name": "ETag",
-          "Value": "\"SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE=\""
+          "Value": "\"cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11907,19 +11907,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU=\""
+          "Value": "W/\"vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-cplclUB1VzsvKNtTaxDv/enBmb24tb8zA89sIHIXgnU="
+          "Value": "sha256-vy4viYafqCzUsuM+xg88WEp4EjNDk8JvrBW12Lon1D4="
         }
       ]
     },
     {
       "Route": "_framework/Alym.Shared.wasm.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-6zktiesapu.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\lbe3uc31o3-ln3j0u0gkz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11928,7 +11928,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2126"
+          "Value": "2348"
         },
         {
           "Name": "Content-Type",
@@ -11936,11 +11936,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE=\""
+          "Value": "\"cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Mon, 06 Oct 2025 17:16:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11958,7 +11958,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SfcVCV3YirKEUwMZIchJ4kQsr0Fc1O5WtGBB/uy54KE="
+          "Value": "sha256-cyGQjs2IdipIcYMjUgc9TYJ5n7EmnaWUTKqgtI/Iztg="
         }
       ]
     },
@@ -11981,11 +11981,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0Sd0f4cfCI9nDNlHcQ9R4bwsCzPODvqLibVMdoKwUVI=\""
+          "Value": "\"jvanM9RR+IWwK/0reOR5HnxJRGrh0mqJQwAMWKeyhoE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 09:05:21 GMT"
+          "Value": "Thu, 09 Oct 2025 17:36:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11995,18 +11995,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0Sd0f4cfCI9nDNlHcQ9R4bwsCzPODvqLibVMdoKwUVI="
+          "Value": "sha256-jvanM9RR+IWwK/0reOR5HnxJRGrh0mqJQwAMWKeyhoE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\rid3d4svih-5rgwrk8b33.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\rid3d4svih-63oa1cmfit.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000080482897"
+          "Quality": "0.000080463470"
         }
       ],
       "ResponseHeaders": [
@@ -12016,15 +12016,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12424"
+          "Value": "12427"
         },
         {
           "Name": "ETag",
-          "Value": "\"OeIwnjNi94LAU/alFZbNa4bvWJmZNwsKxDEHDOVTpDQ=\""
+          "Value": "\"ScpkV6FvT9fXlT0TFga2geLagysUiHltqXE+QUCQFFo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Thu, 09 Oct 2025 17:35:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12044,19 +12044,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0Sd0f4cfCI9nDNlHcQ9R4bwsCzPODvqLibVMdoKwUVI=\""
+          "Value": "W/\"jvanM9RR+IWwK/0reOR5HnxJRGrh0mqJQwAMWKeyhoE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0Sd0f4cfCI9nDNlHcQ9R4bwsCzPODvqLibVMdoKwUVI="
+          "Value": "sha256-jvanM9RR+IWwK/0reOR5HnxJRGrh0mqJQwAMWKeyhoE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\rid3d4svih-5rgwrk8b33.gz",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\-\\Учеба\\Academy TOP\\Экзамены и Программы\\Alym\\Alym.Client\\obj\\Debug\\net9.0\\compressed\\rid3d4svih-63oa1cmfit.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12065,7 +12065,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12424"
+          "Value": "12427"
         },
         {
           "Name": "Content-Type",
@@ -12073,11 +12073,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OeIwnjNi94LAU/alFZbNa4bvWJmZNwsKxDEHDOVTpDQ=\""
+          "Value": "\"ScpkV6FvT9fXlT0TFga2geLagysUiHltqXE+QUCQFFo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 08:46:23 GMT"
+          "Value": "Thu, 09 Oct 2025 17:35:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12095,7 +12095,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OeIwnjNi94LAU/alFZbNa4bvWJmZNwsKxDEHDOVTpDQ="
+          "Value": "sha256-ScpkV6FvT9fXlT0TFga2geLagysUiHltqXE+QUCQFFo="
         }
       ]
     },

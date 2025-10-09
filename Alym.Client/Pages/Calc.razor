@@ -1,5 +1,6 @@
 @page "/calc"
 @using Alym.Shared.Models
+@inject HttpClient Http
 
 <PageTitle>Калькулятор — Alym</PageTitle>
 
@@ -21,17 +22,16 @@
         <h5>@selected.Name — Введите параметры</h5>
 
         <div class="card p-3 mb-3" style="max-width:800px">
-    @for (int i = 0; i < selected.Questions.Count; i++)
-    {
-        var index = i;  <!-- фикс для Blazor -->
-        <div class="mb-3">
-            <label>@selected.Questions[index].Text</label>
-            <InputNumber @bind-Value="selected.Questions[index].Value"
-                         TValue="decimal"
-                         class="form-control" />
-        </div>
+            @for (int i = 0; i < selected.Questions.Count; i++)
+            {
+                var index = i; <!-- фикс для Blazor -->
+                <div class="mb-3">
+                    <label>@selected.Questions[index].Text</label>
+                    <InputNumber @bind-Value="selected.Questions[index].Value"
+                                 TValue="decimal"
+                                 class="form-control" />
+                </div>
             }
-            
 
             <div class="d-flex justify-content-between">
                 <button class="btn btn-secondary" @onclick="Prev">← Назад</button>
@@ -66,61 +66,31 @@
 </div>
 
 @code {
+    private List<Tariff> tariffs = new();
+    private Tariff? selectedTariff;
+
     private int step = 1;
     private BusinessPreset? selected;
     private List<BusinessPreset> presets = new();
     private List<string> resultLines = new();
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        // Быстрые пресеты — можно потом загружать с сервера
-        presets = new List<BusinessPreset>
+        try
         {
-            new BusinessPreset
-            {
-                Name = "Кофейня",
-                Questions = new List<Question>
-                {
-                    new Question { Text = "Сколько чашек в день?" },
-                    new Question { Text = "Средний чек (руб)?" },
-                    new Question { Text = "Себестоимость напитка (руб)?" },
-                    new Question { Text = "Аренда в месяц (руб)?" }
-                }
-            },
-            new BusinessPreset
-            {
-                Name = "Компьютерный клуб",
-                Questions = new List<Question>
-                {
-                    new Question { Text = "Сколько компьютеров?" },
-                    new Question { Text = "Часы работы в день (в среднем)?" },
-                    new Question { Text = "Средняя цена за час (руб)?" },
-                    new Question { Text = "Эл.энергия на 1 ПК/час (кВт·ч)?" },
-                    new Question { Text = "Зарплата администратора в месяц (руб)?" }
-                }
-            },
-            new BusinessPreset
-            {
-                Name = "Парикмахерская",
-                Questions = new List<Question>
-                {
-                    new Question { Text = "Сколько мастеров?" },
-                    new Question { Text = "Среднее количество клиентов в день на мастера?" },
-                    new Question { Text = "Средний чек (руб)?" },
-                    new Question { Text = "Расходы на материалы в месяц (руб)?" }
-                }
-            },
-            new BusinessPreset
-            {
-              Name = "Общественный туалет",
-              Questions = new List<Question>
-              {
-                new Question {Text = "Сколько стоит вход"},
-                new Question {Text = "Среднее кол-во клиентов в день"},
-                new Question {Text = "Расходы"},
-              }
-            }
-        };
+            // Загружаем бизнес-пресеты из API (БД)
+            var list = await Http.GetFromJsonAsync<List<BusinessPreset>>("/api/presets");
+            if (list != null) presets = list;
+
+            // Загружаем тарифы из API (БД)
+            var tariffList = await Http.GetFromJsonAsync<List<Tariff>>("/api/tariffs");
+            if (tariffList != null) tariffs = tariffList;
+        }
+        catch (Exception ex)
+        {
+            // Можно добавить логирование
+            Console.WriteLine($"Ошибка загрузки данных: {ex.Message}");
+        }
     }
 
     private void SelectBusiness(BusinessPreset p)
@@ -144,7 +114,6 @@
         resultLines.Clear();
         if (selected == null) return;
 
-        // Примеры расчётов — замени на свои бухгалтерские формулы позже
         if (selected.Name == "Кофейня")
         {
             var cups = selected.Questions[0].Value;
@@ -154,7 +123,7 @@
 
             var revenueDaily = cups * avgCheck;
             var profitDaily = cups * (avgCheck - cost);
-            var profitMonthly = profitDaily * 26 - rent; // 26 рабочих дней — пример
+            var profitMonthly = profitDaily * 26 - rent;
 
             resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
             resultLines.Add($"Дневная прибыль (после себестоимости): {profitDaily:0.00} руб.");
@@ -188,15 +157,17 @@
             resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
             resultLines.Add($"Материальные расходы в месяц: {materials:0.00} руб.");
         }
-        else if(selected.Name == "Общественный туалет")
+        else if (selected.Name == "Общественный туалет")
         {
-          var price = selected.Questions[index:0].Value;
-          var cl = selected.Questions[index:1].Value;
-          var rashod = selected.Questions[index:2].Value;
+            var price = selected.Questions[0].Value;
+            var cl = selected.Questions[1].Value;
+            var rashod = selected.Questions[2].Value;
 
-          var den = price * cl - rashod;
+            var revenueDaily = price * cl;
+            var profitDaily = revenueDaily - rashod;
 
-          resultLines.Add(item: $"дневная выручка:{den:0.00} руб.");
+            resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
+            resultLines.Add($"Дневная прибыль: {profitDaily:0.00} руб.");
         }
 
         step = 3;

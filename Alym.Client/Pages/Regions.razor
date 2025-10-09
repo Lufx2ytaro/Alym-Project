@@ -1,4 +1,35 @@
 @page "/regions"
+@using Alym.Shared.Models
+@inject HttpClient Http
 
-<h3>Regions</h3>
-<p>Здесь будут все калькуляторы для расчётов зарплаты, налогов и ЖКХ.</p>
+<h3>Тарифы по регионам</h3>
+
+@if (tariffs == null)
+{
+    <p>Загрузка...</p>
+}
+else if (!tariffs.Any())
+{
+    <p>Нет данных</p>
+}
+else
+{
+    <table class="table">
+        <thead><tr><th>Регион</th><th>Цена (руб/кВт·ч)</th></tr></thead>
+        <tbody>
+            @foreach (var t in tariffs)
+            {
+                <tr><td>@t.Region</td><td>@t.Price.ToString("0.00")</td></tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<Tariff>? tariffs;
+
+    protected override async Task OnInitializedAsync()
+    {
+        tariffs = await Http.GetFromJsonAsync<List<Tariff>>("/api/tariffs");
+    }
+}
