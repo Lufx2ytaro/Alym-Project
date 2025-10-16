@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Alym.Client.props" />
-</Project>
