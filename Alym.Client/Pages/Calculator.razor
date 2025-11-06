@@ -1,4 +1,190 @@
 @page "/calculator"
+@using System.Linq
 
-<h3>Calculator</h3>
-<p>Здесь будут все калькуляторы для расчётов зарплаты, налогов и ЖКХ.</p>
+<div class="min-h-screen bg-gradient-to-b from-blue-50 to-gray-100 py-10 px-6">
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 border border-gray-200">
+        <h1 class="text-3xl font-extrabold text-gray-800 mb-8 text-center">
+            💼 Бизнес-калькулятор
+        </h1>
+
+        @if (SelectedCategory == null)
+        {
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                @foreach (var category in Categories)
+                {
+                    <div class="group p-6 rounded-2xl shadow-md border border-gray-100 bg-gradient-to-br from-white to-blue-50
+                                hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+                         @onclick="@(() => SelectCategory(category))">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-3xl">@category.Icon</span>
+                            <h3 class="text-xl font-semibold text-gray-800 group-hover:text-blue-700">@category.Name</h3>
+                        </div>
+                        <p class="text-gray-600">@category.Description</p>
+                    </div>
+                }
+            </div>
+        }
+        else if (SelectedCalculator == null)
+        {
+            <div>
+                <button class="mb-5 text-blue-600 hover:text-blue-800 font-semibold transition" @onclick="() => SelectedCategory = null">← Назад к категориям</button>
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">@SelectedCategory.Name</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    @foreach (var calc in SelectedCategory.Calculators)
+                    {
+                        <div class="p-5 bg-gradient-to-br from-blue-50 to-white border rounded-2xl shadow hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
+                             @onclick="@(() => SelectCalculator(calc))">
+                            <h4 class="text-lg font-semibold text-gray-800">@calc.Name</h4>
+                            <p class="text-sm text-gray-600 mt-1">@calc.Description</p>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+        else
+        {
+            <div>
+                <button class="mb-5 text-blue-600 hover:text-blue-800 font-semibold transition" @onclick="() => SelectedCalculator = null">← Назад</button>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">@SelectedCalculator.Name</h2>
+                <p class="text-gray-600 mb-6">@SelectedCalculator.Description</p>
+
+                <div class="space-y-5">
+                    @foreach (var q in SelectedCalculator.Questions)
+                    {
+                        <div class="bg-gray-50 rounded-xl p-4 border hover:border-blue-200 transition">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">@q.Text</label>
+                            <input type="number"
+                                   @bind="q.Value"
+                                   class="border border-gray-300 rounded-lg px-4 py-2 w-full focus:ring-2 focus:ring-blue-400 outline-none"
+                                   placeholder="@q.Hint"
+                                   @oninput="CalculateResult" />
+                        </div>
+                    }
+                </div>
+
+                <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-green-100 to-emerald-50 border border-green-200 shadow-inner text-center">
+                    <h5 class="text-xl font-semibold text-gray-800">💰 Итоговый результат</h5>
+                    <p class="text-3xl font-extrabold text-green-700 mt-2">@Result.ToString("N2") ₸</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+
+  
+    class CalculatorQuestion
+    {
+        public string Text { get; set; } = "";
+        public string? Hint { get; set; }
+        public decimal Value { get; set; }
+    }
+
+    class BusinessCalculator
+    {
+        public string Name { get; set; } = "";
+        public string Description { get; set; } = "";
+        public List<CalculatorQuestion> Questions { get; set; } = new();
+    }
+
+    class CalculatorCategory
+    {
+        public string Name { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string Icon { get; set; } = "";
+        public List<BusinessCalculator> Calculators { get; set; } = new();
+    }
+
+    List<CalculatorCategory> Categories = new();
+    CalculatorCategory? SelectedCategory;
+    BusinessCalculator? SelectedCalculator;
+    decimal Result = 0;
+
+    protected override void OnInitialized()
+    {
+        Categories = new()
+        {
+            new CalculatorCategory
+            {
+                Name = "🏭 Производство",
+                Description = "Расчёт себестоимости, прибыли и точки безубыточности",
+                Icon = "🏭",
+                Calculators = new()
+                {
+                    new BusinessCalculator
+                    {
+                        Name = "Расчёт себестоимости товара",
+                        Description = "Введите все затраты, чтобы получить итоговую себестоимость.",
+                        Questions = new()
+                        {
+                            new CalculatorQuestion { Text = "Себестоимость сырья", Hint = "₸" },
+                            new CalculatorQuestion { Text = "Стоимость упаковки", Hint = "₸" },
+                            new CalculatorQuestion { Text = "Рабочая сила", Hint = "₸" },
+                            new CalculatorQuestion { Text = "Прочие расходы", Hint = "₸" }
+                        }
+                    },
+                    new BusinessCalculator
+                    {
+                        Name = "Расчёт прибыли",
+                        Description = "Вычислите прибыль, введя себестоимость и цену продажи.",
+                        Questions = new()
+                        {
+                            new CalculatorQuestion { Text = "Себестоимость товара", Hint = "₸" },
+                            new CalculatorQuestion { Text = "Цена продажи", Hint = "₸" }
+                        }
+                    }
+                }
+            },
+            new CalculatorCategory
+            {
+                Name = "🧰 Услуги",
+                Description = "Расчёт стоимости услуги, часов работы и доходности",
+                Icon = "🧰",
+                Calculators = new()
+                {
+                    new BusinessCalculator
+                    {
+                        Name = "Стоимость часа работы",
+                        Description = "Поможет определить, сколько стоит один час вашей работы.",
+                        Questions = new()
+                        {
+                            new CalculatorQuestion { Text = "Общие расходы в месяц", Hint = "₸" },
+                            new CalculatorQuestion { Text = "Количество рабочих часов", Hint = "часов" }
+                        }
+                    }
+                }
+            }
+        };
+    }
+
+    void SelectCategory(CalculatorCategory cat) => SelectedCategory = cat;
+    void SelectCalculator(BusinessCalculator calc) { SelectedCalculator = calc; CalculateResult(); }
+
+    void CalculateResult(ChangeEventArgs? e = null)
+    {
+        if (SelectedCalculator == null) return;
+
+        // Простая базовая логика
+        if (SelectedCalculator.Name.Contains("прибыль", StringComparison.OrdinalIgnoreCase))
+        {
+            var cost = SelectedCalculator.Questions.ElementAtOrDefault(0)?.Value ?? 0;
+            var price = SelectedCalculator.Questions.ElementAtOrDefault(1)?.Value ?? 0;
+            Result = price - cost;
+        }
+        else if (SelectedCalculator.Name.Contains("час", StringComparison.OrdinalIgnoreCase))
+        {
+            var expenses = SelectedCalculator.Questions.ElementAtOrDefault(0)?.Value ?? 0;
+            var hours = SelectedCalculator.Questions.ElementAtOrDefault(1)?.Value ?? 1;
+            Result = hours == 0 ? 0 : expenses / hours;
+        }
+        else
+        {
+            Result = SelectedCalculator.Questions.Sum(q => q.Value);
+        }
+    }
+
+      
+    
+}

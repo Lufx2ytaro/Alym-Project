@@ -2,18 +2,15 @@ using Microsoft.AspNetCore.Components.WebAssembly.Server;
 using Microsoft.AspNetCore.SpaServices.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Alym.Server.Data;
+using Alym.Shared.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// EF / SQLite - Подключаем Entity Framework Core (ORM).
-// Он связывает C# объекты с таблицами в SQLite.
-// Файл tariffs.db — это база данных (создаётся автоматически).
+// ✅ Подключаем Entity Framework Core (SQLite)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=tariffs.db"));
 
-// CORS (dev) Разрешаем CORS — чтобы клиент (веб) мог обращаться к серверу.
-// Без этого браузер блокировал бы запросы с других доменов.
-// МЕжсайтовый скриптинг 
+// ✅ CORS — разрешаем клиенту обращаться к серверу
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -22,71 +19,95 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader());
 });
 
-// Добавляем контроллеры (API) Говорим .NET, что будем использовать контроллеры —
-// это классы, которые принимают и обрабатывают HTTP-запросы.
+// ✅ Контроллеры и Swagger
 builder.Services.AddControllers();
-
-// Swagger Подключаем Swagger — интерфейс для тестирования API прямо в браузере.
-// (Доступен, когда app.Environment.IsDevelopment()).
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Создаём само приложение (всё, что ты настроил — теперь превращается в сервер).
 var app = builder.Build();
 
-// Создаём БД и seed тарифов Этот блок создаёт базу данных при первом запуске
-// и добавляет стартовые тарифы (seed), если таблица пустая.
-// Так ты получаешь “данные по умолчанию”.
+// ✅ Создание и инициализация базы данных (seed)
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    db.Database.EnsureCreated();
+    db.Database.Migrate();
+
+    // ---- Заполняем таблицы по умолчанию ----
+    if (!db.TariffCategories.Any())
+    {
+        db.TariffCategories.AddRange(new[]
+        {
+            new TariffCategory { Name = "Электричество" },
+            new TariffCategory { Name = "Вода" },
+            new TariffCategory { Name = "Газ" },
+            new TariffCategory { Name = "Отопление" }
+        });
+        db.SaveChanges();
+    }
+
+    if (!db.Regions.Any())
+    {
+        db.Regions.AddRange(new[]
+        {
+            new Region { Name = "Moscow" },
+            new Region { Name = "Saint Petersburg" },
+            new Region { Name = "Kazan" },
+            new Region { Name = "Novosibirsk" }
+        });
+        db.SaveChanges();
+    }
 
     if (!db.Tariffs.Any())
     {
+        var elektId = db.TariffCategories.First(c => c.Name == "Электричество").Id;
+        var waterId = db.TariffCategories.First(c => c.Name == "Вода").Id;
+
+        var moscowId = db.Regions.First(r => r.Name == "Moscow").Id;
+        var spbId = db.Regions.First(r => r.Name == "Saint Petersburg").Id;
+        var kazId = db.Regions.First(r => r.Name == "Kazan").Id;
+
         db.Tariffs.AddRange(new[]
         {
-            new Alym.Shared.Models.Tariff { Region = "Moscow", Price = 5.50m },
-            new Alym.Shared.Models.Tariff { Region = "Saint Petersburg", Price = 4.80m },
-            new Alym.Shared.Models.Tariff { Region = "Novosibirsk", Price = 4.12m },
-            new Alym.Shared.Models.Tariff { Region = "Kazan", Price = 3.05m },
-            new Alym.Shared.Models.Tariff { Region = "Obninsk", Price = 4.20m }
+            new Tariff { TariffCategoryId = elektId, RegionId = moscowId, PricePerUnit = 5.50m, Unit = "руб/кВт·ч", UpdatedAt = DateTime.UtcNow },
+            new Tariff { TariffCategoryId = elektId, RegionId = spbId, PricePerUnit = 4.80m, Unit = "руб/кВт·ч", UpdatedAt = DateTime.UtcNow },
+            new Tariff { TariffCategoryId = elektId, RegionId = kazId, PricePerUnit = 4.05m, Unit = "руб/кВт·ч", UpdatedAt = DateTime.UtcNow },
+
+            new Tariff { TariffCategoryId = waterId, RegionId = moscowId, PricePerUnit = 50.0m, Unit = "руб/м³", UpdatedAt = DateTime.UtcNow },
+            new Tariff { TariffCategoryId = waterId, RegionId = spbId, PricePerUnit = 45.0m, Unit = "руб/м³", UpdatedAt = DateTime.UtcNow }
+        });
+        db.SaveChanges();
+    }
+
+    // ✅ Создаём таблицу для бизнес-проектов, если она ещё не существует
+    if (!db.Projects.Any())
+    {
+        db.Projects.Add(new Project
+        {
+            Name = "Пример проекта",
+            BusinessType = "Кофейня",
+            Description = "Демонстрационный проект для теста.",
+            CreatedAt = DateTime.UtcNow,
+            SavedData = "{}"
         });
         db.SaveChanges();
     }
 }
 
-// Если приложение запущено в режиме разработки,
-// включаем Swagger для тестов API через браузер.
+// ✅ Swagger — только в режиме разработки
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-
-
-//Это middleware — “слои обработки запросов”.
-//UseHttpsRedirection() — перенаправляет всё на HTTPS.
-//UseCors() — разрешает клиенту общаться с сервером.
-//UseBlazorFrameworkFiles() — подключает Blazor-клиент.
-//UseStaticFiles() — отдаёт файлы (CSS, JS, HTML).
-//UseRouting() — включает маршрутизацию (чтобы контроллеры работали).
-
+// ✅ Middleware
 app.UseHttpsRedirection();
 app.UseCors();
-
-// Отдаём клиентские файлы (Blazor WASM hosted)
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
-
 app.UseRouting();
 
-//Настраиваем маршруты:
-//MapControllers() — говорит: “API обрабатываются контроллерами”.
-//MapFallbackToFile("index.html") — если путь не найден —
-//отдать клиенту (Blazor), чтобы SPA продолжила работать.
-
+// ✅ Маршруты
 app.MapControllers();
 app.MapFallbackToFile("index.html");
 

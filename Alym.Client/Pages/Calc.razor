@@ -1,39 +1,44 @@
 @page "/calc"
 @using Alym.Shared.Models
 @inject HttpClient Http
+@inject NavigationManager NavigationManager
 
 <PageTitle>Калькулятор — Alym</PageTitle>
 
-<div class="container mt-3">
-    <h3>Пошаговый мастер расчёта</h3>
+<div class="container mt-4">
+    <h2 class="text-center mb-4">💼 Пошаговый бизнес-калькулятор</h2>
 
     @if (step == 1)
     {
-        <p>Выберите тип бизнеса:</p>
-        <div class="d-flex flex-wrap">
-            @foreach (var p in presets)
-            {
-                <button class="btn btn-outline-primary m-2" @onclick="() => SelectBusiness(p)">@p.Name</button>
-            }
+        <div class="text-center">
+            <h5>Шаг 1: Выберите тип бизнеса</h5>
+            <div class="d-flex flex-wrap justify-content-center mt-3">
+                @foreach (var p in presets)
+                {
+                    <button class="btn btn-outline-primary m-2 px-4 py-2" @onclick="() => SelectBusiness(p)">
+                        @p.Name
+                    </button>
+                }
+            </div>
         </div>
     }
     else if (step == 2 && selected != null)
     {
-        <h5>@selected.Name — Введите параметры</h5>
+        <div class="card shadow p-4 mx-auto" style="max-width:800px">
+            <h5 class="mb-3">@selected.Name — Введите параметры</h5>
 
-        <div class="card p-3 mb-3" style="max-width:800px">
             @for (int i = 0; i < selected.Questions.Count; i++)
             {
-                var index = i; <!-- фикс для Blazor -->
+                var index = i;
                 <div class="mb-3">
-                    <label>@selected.Questions[index].Text</label>
+                    <label class="form-label">@selected.Questions[index].Text</label>
                     <InputNumber @bind-Value="selected.Questions[index].Value"
                                  TValue="decimal"
                                  class="form-control" />
                 </div>
             }
 
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mt-4">
                 <button class="btn btn-secondary" @onclick="Prev">← Назад</button>
                 <button class="btn btn-primary" @onclick="Calculate">Посчитать →</button>
             </div>
@@ -41,34 +46,55 @@
     }
     else if (step == 3)
     {
-        <h5>Результаты</h5>
-        <div class="card p-3" style="max-width:800px">
+        <div class="card shadow p-4 mx-auto" style="max-width:800px">
+            <h5>Шаг 3: Результаты расчёта</h5>
+
             @if (resultLines.Any())
             {
-                <ul>
+                <ul class="list-group list-group-flush mt-3">
                     @foreach (var line in resultLines)
                     {
-                        <li>@line</li>
+                        <li class="list-group-item">@line</li>
                     }
                 </ul>
             }
             else
             {
-                <p>Результаты отсутствуют.</p>
+                <p class="text-muted mt-3">Результаты отсутствуют.</p>
             }
 
-            <div class="mt-3 d-flex gap-2">
-                <button class="btn btn-secondary" @onclick="() => { step = 1; selected = null; resultLines.Clear(); }">Начать заново</button>
-                <button class="btn btn-outline-primary" @onclick="() => step = 2">Вернуться к параметрам</button>
+            <div class="d-flex justify-content-between mt-4">
+                <button class="btn btn-secondary" @onclick="() => { step = 1; selected = null; resultLines.Clear(); }">
+                    ⬅ Новый расчёт
+                </button>
+                <button class="btn btn-outline-primary" @onclick="() => step = 2">
+                    ✏ Изменить параметры
+                </button>
+                <button class="btn btn-success" @onclick="() => step = 4">
+                    💾 Сохранить проект
+                </button>
+            </div>
+        </div>
+    }
+    else if (step == 4)
+    {
+        <div class="card shadow p-4 mx-auto text-center" style="max-width:600px">
+            <h5 class="mb-3">Шаг 4: Сохранение проекта</h5>
+            <p>Хотите сохранить этот расчёт в разделе <b>«Мои проекты»</b>?</p>
+
+            <div class="mt-4">
+                <button class="btn btn-success me-3 px-4" @onclick="SaveProject">
+                    ✅ Да, сохранить
+                </button>
+                <button class="btn btn-outline-secondary px-4" @onclick="() => step = 3">
+                    ↩ Нет, вернуться
+                </button>
             </div>
         </div>
     }
 </div>
 
 @code {
-    private List<Tariff> tariffs = new();
-    private Tariff? selectedTariff;
-
     private int step = 1;
     private BusinessPreset? selected;
     private List<BusinessPreset> presets = new();
@@ -78,24 +104,18 @@
     {
         try
         {
-            // Загружаем бизнес-пресеты из API (БД)
+            // Загружаем шаблоны бизнесов из API
             var list = await Http.GetFromJsonAsync<List<BusinessPreset>>("/api/presets");
             if (list != null) presets = list;
-
-            // Загружаем тарифы из API (БД)
-            var tariffList = await Http.GetFromJsonAsync<List<Tariff>>("/api/tariffs");
-            if (tariffList != null) tariffs = tariffList;
         }
         catch (Exception ex)
         {
-            // Можно добавить логирование
-            Console.WriteLine($"Ошибка загрузки данных: {ex.Message}");
+            Console.WriteLine($"Ошибка загрузки пресетов: {ex.Message}");
         }
     }
 
     private void SelectBusiness(BusinessPreset p)
     {
-        // создаём рабочую копию, чтобы не затронуть исходный шаблон
         selected = new BusinessPreset
         {
             Name = p.Name,
@@ -114,62 +134,135 @@
         resultLines.Clear();
         if (selected == null) return;
 
-        if (selected.Name == "Кофейня")
+        switch (selected.Name)
         {
-            var cups = selected.Questions[0].Value;
-            var avgCheck = selected.Questions[1].Value;
-            var cost = selected.Questions[2].Value;
-            var rent = selected.Questions[3].Value;
+            case "Кофейня":
+                {
+                    var cups = selected.Questions[0].Value;
+                    var avgCheck = selected.Questions[1].Value;
+                    var cost = selected.Questions[2].Value;
+                    var rent = selected.Questions[3].Value;
 
-            var revenueDaily = cups * avgCheck;
-            var profitDaily = cups * (avgCheck - cost);
-            var profitMonthly = profitDaily * 26 - rent;
+                    var revenueDaily = cups * avgCheck;
+                    var profitDaily = cups * (avgCheck - cost);
+                    var profitMonthly = profitDaily * 26 - rent;
 
-            resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
-            resultLines.Add($"Дневная прибыль (после себестоимости): {profitDaily:0.00} руб.");
-            resultLines.Add($"Приблизительная прибыль в месяц: {profitMonthly:0.00} руб.");
-        }
-        else if (selected.Name == "Компьютерный клуб")
-        {
-            var pcs = selected.Questions[0].Value;
-            var hours = selected.Questions[1].Value;
-            var priceHour = selected.Questions[2].Value;
-            var elPerHour = selected.Questions[3].Value;
-            var adminSalary = selected.Questions[4].Value;
+                    resultLines.Add($"☕ Дневная выручка: {revenueDaily:0.00} руб.");
+                    resultLines.Add($"💰 Дневная прибыль: {profitDaily:0.00} руб.");
+                    resultLines.Add($"📆 Месячная прибыль: {profitMonthly:0.00} руб.");
+                    break;
+                }
 
-            var revenueDaily = pcs * hours * priceHour;
-            var dailyKwh = pcs * hours * elPerHour;
+            case "Компьютерный клуб":
+                {
+                    var pcs = selected.Questions[0].Value;
+                    var hours = selected.Questions[1].Value;
+                    var priceHour = selected.Questions[2].Value;
+                    var elPerHour = selected.Questions[3].Value;
+                    var adminSalary = selected.Questions[4].Value;
 
-            resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
-            resultLines.Add($"Дневной расход электроэнергии: {dailyKwh:0.00} кВт·ч (умножьте на тариф для руб.)");
-            resultLines.Add($"Зарплата администратора (в мес): {adminSalary:0.00} руб.");
-        }
-        else if (selected.Name == "Парикмахерская")
-        {
-            var masters = selected.Questions[0].Value;
-            var clients = selected.Questions[1].Value;
-            var avgCheck = selected.Questions[2].Value;
-            var materials = selected.Questions[3].Value;
+                    var revenueDaily = pcs * hours * priceHour;
+                    var dailyKwh = pcs * hours * elPerHour;
 
-            var dailyClients = masters * clients;
-            var revenueDaily = dailyClients * avgCheck;
+                    resultLines.Add($"🎮 Дневная выручка: {revenueDaily:0.00} руб.");
+                    resultLines.Add($"⚡ Расход энергии: {dailyKwh:0.00} кВт·ч");
+                    resultLines.Add($"👨‍💼 Зарплата администратора: {adminSalary:0.00} руб.");
+                    break;
+                }
 
-            resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
-            resultLines.Add($"Материальные расходы в месяц: {materials:0.00} руб.");
-        }
-        else if (selected.Name == "Общественный туалет")
-        {
-            var price = selected.Questions[0].Value;
-            var cl = selected.Questions[1].Value;
-            var rashod = selected.Questions[2].Value;
+            case "Парикмахерская":
+                {
+                    var masters = selected.Questions[0].Value;
+                    var clients = selected.Questions[1].Value;
+                    var avgCheck = selected.Questions[2].Value;
+                    var materials = selected.Questions[3].Value;
 
-            var revenueDaily = price * cl;
-            var profitDaily = revenueDaily - rashod;
+                    var dailyClients = masters * clients;
+                    var revenueDaily = dailyClients * avgCheck;
 
-            resultLines.Add($"Дневная выручка: {revenueDaily:0.00} руб.");
-            resultLines.Add($"Дневная прибыль: {profitDaily:0.00} руб.");
+                    resultLines.Add($"✂ Клиентов в день: {dailyClients}");
+                    resultLines.Add($"💵 Дневная выручка: {revenueDaily:0.00} руб.");
+                    resultLines.Add($"🧴 Материальные расходы: {materials:0.00} руб./мес");
+                    break;
+                }
+
+            case "Фастфуд (шаурма, бургеры)":
+                {
+                    var points = selected.Questions[0].Value;
+                    var clients = selected.Questions[1].Value;
+                    var avgCheck = selected.Questions[2].Value;
+                    var cost = selected.Questions[3].Value;
+                    var rent = selected.Questions[4].Value;
+
+                    var dailyRevenue = clients * avgCheck;
+                    var dailyProfit = (avgCheck - cost) * clients;
+                    var monthlyProfit = dailyProfit * 30 - rent;
+                    var totalProfit = monthlyProfit * points;
+
+                    resultLines.Add($"🍔 Клиентов в день: {clients}");
+                    resultLines.Add($"💸 Средний чек: {avgCheck:0.00} руб.");
+                    resultLines.Add($"📆 Месячная прибыль: {monthlyProfit:0.00} руб.");
+                    resultLines.Add($"🏪 Всего по {points} точкам: {totalProfit:0.00} руб.");
+
+                    if (monthlyProfit > 0)
+                        resultLines.Add("✅ Прибыльный бизнес!");
+                    else
+                        resultLines.Add("⚠️ Убыточный — пересмотрите расходы.");
+                    break;
+                }
+
+            case "Автомойка":
+                {
+                    var carPost = selected.Questions[0].Value;
+                    var carsDay = selected.Questions[1].Value;
+                    var tips = selected.Questions[2].Value;
+                    var comunal = selected.Questions[3].Value;
+                    var workerSalary = selected.Questions[4].Value;
+                    var rent = selected.Questions[5].Value;
+
+                    var revenueDaily = carPost * carsDay * tips;
+                    var revenueMonth = (revenueDaily * 30) - comunal - workerSalary - rent;
+
+                    resultLines.Add($"🚗 Дневная выручка: {revenueDaily:0.00} руб.");
+                    resultLines.Add($"📆 Прибыль в месяц: {revenueMonth:0.00} руб.");
+                    break;
+                }
+
+            case "Фитнес-зал":
+                {
+                    var memberships = selected.Questions[0].Value;
+                    var price = selected.Questions[1].Value;
+                    var trainers = selected.Questions[2].Value;
+                    var comunal = selected.Questions[3].Value;
+                    var rent = selected.Questions[4].Value;
+
+                    var daily = memberships * price;
+                    var monthly = (daily * 30) - trainers - comunal - rent;
+
+                    resultLines.Add($"💪 Клиентов: {memberships}");
+                    resultLines.Add($"💵 Выручка в день: {daily:0.00} руб.");
+                    resultLines.Add($"📆 Прибыль в месяц: {monthly:0.00} руб.");
+                    break;
+                }
         }
 
         step = 3;
+    }
+
+    private async Task SaveProject()
+    {
+        if (selected == null || !resultLines.Any()) return;
+
+        var project = new Project
+        {
+            Name = selected.Name,
+            BusinessType = selected.Name,
+            Description = $"Рассчитан {DateTime.Now:dd.MM.yyyy HH:mm}",
+            CreatedAt = DateTime.Now,
+            SavedData = string.Join("\n", resultLines)
+        };
+
+        await Http.PostAsJsonAsync("api/projects", project);
+        NavigationManager.NavigateTo("/projects");
     }
 }

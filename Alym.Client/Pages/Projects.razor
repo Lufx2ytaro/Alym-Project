@@ -1,0 +1,85 @@
+@page "/projects"
+@using Alym.Shared.Models
+@inject HttpClient Http
+@using System.Net.Http.Json
+@inject NavigationManager NavigationManager
+
+<PageTitle>Мои проекты</PageTitle>
+
+<div class="min-h-screen bg-gray-50 py-10 px-6">
+    <div class="max-w-6xl mx-auto">
+        <!-- Заголовок и кнопка -->
+        <div class="flex items-center justify-between mb-10 border-b pb-4">
+            <h1 class="text-3xl font-bold text-gray-800">Мои проекты</h1>
+
+            <button class="flex items-center gap-2 bg-green-600 hover: green text-black px-5 py-2.5 rounded-xl text-sm font-medium shadow-md transition-all duration-200"
+        @onclick='() => NavigationManager.NavigateTo("/calc")'>
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+    </svg>
+    Новый проект
+</button>
+
+        </div>
+
+        <!-- Список проектов -->
+        @if (projects == null)
+        {
+            <p class="text-gray-500 text-center mt-10">Загрузка...</p>
+        }
+        else if (!projects.Any())
+        {
+            <div class="text-center mt-20 text-gray-500">
+                <p class="text-lg">У вас пока нет сохранённых проектов.</p>
+                <p class="mt-2">Нажмите <strong>«Новый проект»</strong>, чтобы начать.</p>
+            </div>
+        }
+        else
+        {
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                @foreach (var p in projects)
+                {
+                    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-6 border border-gray-100 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-xl font-semibold text-gray-800">@p.Name</h2>
+                            <p class="text-blue-600 font-medium mt-1">@p.BusinessType</p>
+                            <p class="text-gray-600 mt-3 text-sm line-clamp-3">@p.Description</p>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-6">
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
+                                    @onclick="() => OpenProject(p.Id)">
+                                Открыть
+                            </button>
+                            <button class="text-red-500 hover:text-red-700 font-semibold text-sm"
+                                    @onclick="() => DeleteProject(p.Id)">
+                                Удалить
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        projects = await Http.GetFromJsonAsync<List<Project>>("api/projects");
+    }
+
+    private void OpenProject(int id)
+    {
+        NavigationManager.NavigateTo($"/projects/{id}");
+    }
+
+    private async Task DeleteProject(int id)
+    {
+        await Http.DeleteAsync($"api/projects/{id}");
+        projects = await Http.GetFromJsonAsync<List<Project>>("api/projects");
+    }
+}

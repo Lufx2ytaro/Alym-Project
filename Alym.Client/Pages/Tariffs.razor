@@ -1,0 +1,122 @@
+@page "/tariffs"
+@using Alym.Shared.Models
+@inject HttpClient Http
+
+<PageTitle>Тарифы — Alym</PageTitle>
+
+<div class="container mt-3">
+    <h3>Тарифы по услугам и регионам</h3>
+
+    <div class="row g-3">
+        <div class="col-12 col-md-4">
+            <label class="form-label">Категория</label>
+            <select class="form-select" @onchange="OnCategoryChanged">
+                <option value="">— Выберите категорию —</option>
+                @foreach (var c in categories)
+                {
+                    <option value="@c.Id">@c.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <label class="form-label">Город / Регион</label>
+            <select class="form-select" @onchange="OnRegionChanged">
+                <option value="">— Выберите город —</option>
+                @foreach (var r in regions)
+                {
+                    <option value="@r.Id">@r.Name</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        @if (loading)
+        {
+            <p>Загрузка...</p>
+        }
+        else if (!tariffs.Any())
+        {
+            <p class="text-muted">Тарифы не найдены. Выберите категорию и регион.</p>
+        }
+        else
+        {
+            <div class="list-group">
+                @foreach (var t in tariffs)
+                {
+                    <div class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <b>@t.TariffCategory?.Name</b> — <span>@t.Region?.Name</span>
+                                <div class="small text-muted">@t.Notes</div>
+                            </div>
+                            <div class="text-end">
+                                <div style="font-size:1.15rem">@t.PricePerUnit:0.00</div>
+                                <div class="small text-muted">@t.Unit</div>
+                                <div class="small text-muted">Обновлён: @t.UpdatedAt.ToLocalTime().ToString("yyyy-MM-dd")</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<TariffCategory> categories = new();
+    private List<Region> regions = new();
+    private List<Tariff> tariffs = new();
+    private bool loading = true;
+
+    private int? selectedCategoryId;
+    private int? selectedRegionId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            categories = await Http.GetFromJsonAsync<List<TariffCategory>>("/api/tariffs/categories") ?? new();
+            regions = await Http.GetFromJsonAsync<List<Region>>("/api/tariffs/regions") ?? new();
+        }
+        catch
+        {
+            // можно логировать
+        }
+        loading = false;
+    }
+
+    private async Task OnCategoryChanged(ChangeEventArgs e)
+    {
+        selectedCategoryId = string.IsNullOrEmpty(e.Value?.ToString()) ? null : int.Parse(e.Value?.ToString()!);
+        await LoadTariffs();
+    }
+
+    private async Task OnRegionChanged(ChangeEventArgs e)
+    {
+        selectedRegionId = string.IsNullOrEmpty(e.Value?.ToString()) ? null : int.Parse(e.Value?.ToString()!);
+        await LoadTariffs();
+    }
+
+    private async Task LoadTariffs()
+    {
+        loading = true;
+        try
+        {
+            var url = "/api/tariffs";
+            var q = new List<string>();
+            if (selectedCategoryId.HasValue) q.Add($"categoryId={selectedCategoryId.Value}");
+            if (selectedRegionId.HasValue) q.Add($"regionId={selectedRegionId.Value}");
+            if (q.Any()) url += "?" + string.Join("&", q);
+
+            tariffs = await Http.GetFromJsonAsync<List<Tariff>>(url) ?? new();
+        }
+        catch
+        {
+            tariffs = new();
+        }
+        loading = false;
+        StateHasChanged();
+    }
+}

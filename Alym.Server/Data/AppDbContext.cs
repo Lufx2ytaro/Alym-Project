@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using Alym.Shared.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Alym.Server.Data
 {
@@ -7,6 +7,20 @@ namespace Alym.Server.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Tariff> Tariffs { get; set; } = null!;
+        // Все таблицы в одном контексте
+        public DbSet<TariffCategory> TariffCategories { get; set; }
+        public DbSet<Region> Regions { get; set; }
+        public DbSet<Tariff> Tariffs { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<BusinessPreset> Presets { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    modelBuilder.Entity<BusinessPreset>()
+        .HasKey(b => b.Id);
+        
+    modelBuilder.Entity<Question>()
+        .HasKey(q => q.Id);
+}
     }
 }
